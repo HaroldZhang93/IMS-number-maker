@@ -1,0 +1,145 @@
+# Python字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C扩展
+*.so
+*.dll
+*.dylib
+
+# 发行版/打包文件
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller相关
+*.manifest
+*.spec.bak
+
+# 日志文件
+*.log
+logs/
+
+# 单元测试/覆盖率报告
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# 翻译文件
+*.mo
+*.pot
+
+# Django相关
+local_settings.py
+db.sqlite3
+
+# Flask相关
+instance/
+.webassets-cache
+
+# Scrapy相关
+.scrapy
+
+# Sphinx文档
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# 环境文件
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder项目设置
+.spyderproject
+.spyproject
+
+# Rope项目设置
+.ropeproject
+
+# mkdocs文档
+/site
+
+# mypy
+.mypy_cache/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Windows系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux系统文件
+*~
+.directory
+.Trash-*
+
+# PyQt自动生成的文件
+*_ui.py
+*_rc.py
+
+# 项目特定文件
+# 用户配置文件和数据
+*.json
+!package.json
+# 生成的脚本文件
+ims_script_*.txt
+
+# 临时文件
+temp/
+tmp/ 
