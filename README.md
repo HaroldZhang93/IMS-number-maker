@@ -104,5 +104,4 @@ IMS-number-maker/
 
 如有任何问题或建议，请通过以下方式联系我：
 
-- 邮箱：your.email@example.com
-- GitHub Issues：[https://github.com/yourusername/IMS-number-maker/issues](https://github.com/yourusername/IMS-number-maker/issues) 
+- GitHub Issues：[https://github.com/HaroldZhang93/IMS-number-maker/issues](https://github.com/HaroldZhang93/IMS-number-maker/issues) 
