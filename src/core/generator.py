@@ -12,12 +12,12 @@ class ScriptGenerator:
         """初始化生成器"""
         self.templates = {
             'uspp_pvi': 'ADD NEWPVI:PVITYPE=0,PVI={phone}@{domain},IREGFLAG=1,IDENTITYTYPE=0,PECFN={cfn},SECFN={cfn},PCCFN={cfn},SCCFN={cfn},SecVer=30,UserName=,PASSWORD={password},Realm={domain},ACCTypeList=*,ACCInfoList=*,ACCValueList=*;',
-            'uspp_pui_sip': 'ADD NEWPUI:IDENTITYTYPE=0,PUI=sip:{phone}@{domain},BARFLAG=0,REGAUTHFG=1,SIFCIDList={sifc_id},ROAMSCHEMEID=1,SPID=1,SPDesc=65535,PVIList={phone}@{domain},SCSCFNameList=sip:{scscf}.{domain},LOOSEROUTEIND=0;',
-            'uspp_pui_tel': 'ADD NEWPUI:IDENTITYTYPE=0,PUI=tel:{phone},BARFLAG=0,REGAUTHFG=1,SIFCIDList={sifc_id},ROAMSCHEMEID=1,SPID=1,SPDesc=65535,PVIList={phone}@{domain},SCSCFNameList=sip:{scscf}.{domain},LOOSEROUTEIND=0;',
+            'uspp_pui_sip': 'ADD NEWPUI:IDENTITYTYPE=0,PUI=sip:{phone}@{domain},BARFLAG=0,REGAUTHFG=1,SIFCIDList={sifc_id},ROAMSCHEMEID=1,SPID=1,SPDesc=65535,PVIList={phone}@{domain},SCSCFNameList=sip:{scscf},LOOSEROUTEIND=0;',
+            'uspp_pui_tel': 'ADD NEWPUI:IDENTITYTYPE=0,PUI=tel:{phone},BARFLAG=0,REGAUTHFG=1,SIFCIDList={sifc_id},ROAMSCHEMEID=1,SPID=1,SPDesc=65535,PVIList={phone}@{domain},SCSCFNameList=sip:{scscf},LOOSEROUTEIND=0;',
             'uspp_impregset': 'SET IMPREGSET:PUIList=sip:{phone}@{domain}$tel:{phone},DefaultPUI=tel:{phone};',
             'uspp_aliasegroup': 'SET ALIASEGROUP:PUIList=sip:{phone}@{domain}$tel:{phone},AliasGroupID={alias_id};',
             'enum_naptr': 'ADD NaptrRec:name={reversed_number}.e164.arpa,Order=0,Preference=1,Flags=U,Service=sip+e2u,Regexp=!^.*$!sip:{phone}@{domain}!,TTL=0;',
-            'sss_osu_sbr': 'ADD OSU SBR:PUI="tel:{phone}",NETTYPE=1,CC={cc},LATA={lata},TYPE="IMS",OFFLCHG="ON",CORHT="LC"&"DDD"&"IDD"&"SPCS"&"HF"&"HKMACAOTW"&"LT",CIRHT="LC"&"DDD"&"IDD"&"SPCS"&"HF"&"HKMACAOTW"&"LT",CTXOUTRHT="GRPIN"&"GRPOUT"&"GRPOUTNUM",CTXINRHT="GRPIN"&"GRPOUT"&"GRPOUTNUM"IMSUSERTYPE="NMIMS";',
+            'sss_osu_sbr': 'ADD OSU SBR:PUI="tel:{phone}",NETTYPE=1,CC={cc},LATA={lata},TYPE="IMS",OFFLCHG="ON",CORHT="LC"&"DDD"&"IDD"&"SPCS"&"HF"&"HKMACAOTW"&"LT",CIRHT="LC"&"DDD"&"IDD"&"SPCS"&"HF"&"HKMACAOTW"&"LT",CTXOUTRHT="GRPIN"&"GRPOUT"&"GRPOUTNUM",CTXINRHT="GRPIN"&"GRPOUT"&"GRPOUTNUM",IMSUSERTYPE="NMIMS";',
             'sss_osu_oip': 'SET OSU OIP:PUI="sip:{phone}@{domain}",NF="TEL";'
         }
     
